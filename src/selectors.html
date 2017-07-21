@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors</title>
+  <style>
+    div {
+      height: 200px;
+      background: #999999;
+    }
+    p {
+      background: #efefef;
+    }
+    div + em {
+      color: #ffffdf
+    }
+    div > div {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <div>div</div>
+  <em>div的em标签</em>
+  <p>p元素     <em>p元素中的em标签</em></p>
+  <em>div的em标签</em>
+</div>
+</body>
+</html>

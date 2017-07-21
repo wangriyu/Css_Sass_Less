@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Center Position</title>
+    <link href="center.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div style="text-align: center; background: #B0F566"><h1>horizontal center</h1></div>
+    <div style="text-align: center; background: #efefef">
+      <h3>display: inline-</h3>
+      <div style="width: 50px; height: 50px; background: #2196F3; display: inline-block">one</div>
+      <div style="width: 50px; height: 50px; background: #C3C8E8; display: inline-block">two</div>
+      <div style="width: 50px; height: 50px; background: #CA2B7A; display: inline">three</div>
+    </div>
+    <br>
+    <div style="width: 500px; background: #C3C8E8">
+      <h3 style="text-align: center">margin: 0 auto(block elements)</h3>
+      <div style="width: 50px; height: 50px; background: #CA2B7A; margin: 0 auto; text-align: center; line-height: 50px">text</div>
+    </div>
+    <br>
+    <div style="text-align: center; background: #efefef">
+      <h3>text-align: center(inline or inline-* elements)</h3>
+      <span style="width: 50px; height: 50px; background: #2196F3">one</span>
+      <span style="width: 50px; height: 50px; background: #C3C8E8">two</span>
+      <span style="width: 50px; height: 50px; background: #CA2B7A">three</span>
+    </div>
+    <br>
+    <div style="background: #efefef">
+      <h3 style="text-align: center">display: flex</h3>
+      <div style="display: flex; justify-content: center">
+        <div style="width: 50px; height: 50px; background: #2196F3">one</div>
+        <div style="width: 50px; height: 50px; background: #C3C8E8">two</div>
+        <div style="width: 50px; height: 50px; background: #CA2B7A">three</div>
+      </div>
+    </div>
+
+    <div style="text-align: center; background: #B0F566"><h1>vertical center</h1></div>
+    <div style="background: #efefef; padding: 10px 25px 10px 625px">
+      <div style="width: 200px; height: 100px; background: #CA2B7A; line-height: 100px">
+        <span style="color: white"> line-height(inline elements)</span>
+      </div>
+    </div>
+    <br>
+    <div style="background: #efefef; display: flex; justify-content: center">
+      <table style="background: white; width: 240px; border-collapse: separate; margin: 20px; height: 250px">
+        <tr>
+          <td style="background: #F5BD00; color: #383838; padding: 20px; border: 10px solid white">
+            I'm vertically centered multiple lines of text in a real table cell
+          </td>
+        </tr>
+      </table>
+
+      <div style="display: table; height: 250px; background: white; width: 240px; margin: 20px;">
+        <p style="display: table-cell; margin: 0; background: #F5BD00; color: #383838; padding: 20px; border: 10px solid white; vertical-align: middle">
+          I'm vertically centered multiple lines of text in a CSS-created table layout
+        </p>
+      </div>
+    </div>
+    <br>
+    <div style="background: #efefef; padding: 10px; display: flex; justify-content: center">
+      <div style="position: relative; width: 200px; height: 200px; background: #2196F3">
+        <div style="position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin: -50px 0 0 -50px; background: #C3C8E8">
+          fixed height
+        </div>
+      </div>
+      <div style="margin-left: 25px; position: relative; width: 200px; height: 200px; background: #2196F3">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #C3C8E8">
+          unknown height
+        </div>
+      </div>
+    </div>
+    <br>
+    <div style="background: #efefef; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center">
+      <h3>flex layout</h3>
+      <div style="width: 80px; height: 80px; background: #2196F3">
+        one
+      </div>
+      <div style="width: 80px; height: 80px; background: #C3C8E8">
+        two
+      </div>
+      <div style="width: 80px; height: 80px; background: #CA2B7A">
+        three
+      </div>
+    </div>
+  </body>
+</html>
