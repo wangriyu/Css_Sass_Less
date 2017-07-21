@@ -231,7 +231,6 @@ percentage(0.5); // returns `50%`
 
 ### 模式匹配和导引表达式
 
-
 when关键字用以定义一个导引序列(此例只有一个导引)
 ```less
 .mixin (@a) when (lightness(@a) >= 50%) {
