@@ -5,26 +5,50 @@
   <title>Selectors</title>
   <style>
     div {
-      height: 200px;
-      background: #999999;
+      height: 180px;
+      background: #dddddd;
     }
+
+    div p {
+      background: #ffffef;
+    }
+
     p {
-      background: #efefef;
+      background: #ffff0f;
     }
-    div + em {
-      color: #ffffdf
+
+    /* div子元素中的em */
+    div > em {
+      color: #ff4258
     }
+
+    /* 与div同级且相邻的兄弟节点p */
+    div + p {
+      color: #00dd00;
+    }
+
+    /* div中的div */
     div > div {
       height: 50px;
+      background: #00b7f5
     }
   </style>
 </head>
 <body>
-<div>
-  <div>div</div>
-  <em>div的em标签</em>
-  <p>p元素     <em>p元素中的em标签</em></p>
-  <em>div的em标签</em>
-</div>
+  <div>
+    <em>div的子元素em标签</em>
+    <p>div子元素p <em> p元素中的em标签</em></p>
+    <em>div的子元素em标签</em>
+  </div>
+  <br>
+  <div>独立div</div>
+  <p>与div相邻的p</p>
+  <br>
+  <div>
+    <div>div中的div</div>
+    <p>与div相邻的p标签</p>
+    <p>div子元素p <em> p元素中的em标签</em></p>
+    <em>div的子元素em标签</em>
+  </div>
 </body>
 </html>
