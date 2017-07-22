@@ -15,3 +15,5 @@
 - [CSS布局](http://zh.learnlayout.com/no-layout.html)
 - [CSS媒体查询-MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries)
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS伪元素和伪类](http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/)
+- [CSS符号](http://yanhaijing.com/css/2014/01/04/the-30-css-selectors-you-must-memorize/)
