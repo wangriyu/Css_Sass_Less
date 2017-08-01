@@ -50,6 +50,8 @@ $ sass style.scss:style.css --style expanded
 $ sass style.scss:style.css --style compressed // 压缩版本
 ```
 
+[Sass中文网](https://www.sass.hk/)
+
 [SASS入门](https://www.sass.hk/en/guide.htm)
 
 [SASS教程](https://www.sass.hk/docs/)
